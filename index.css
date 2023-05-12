@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<html lang="*" dir="ltr">
+
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="author" content="Super User" />
+
+    <title>Biblioteca Educativa Goquegza</title>
+
+    <link rel="icon" href="img/icono.png"_>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital@1&display=swap" rel="stylesheet">
+    <link href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css” rel= ”stylesheet” >
+    <link rel="stylesheet" href= "https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Delicious+Handrawn&family=Righteous&family=Sono:wght@300;500&family=Volkhov:ital@1&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Delicious+Handrawn&family=Poiret+One&family=Righteous&family=Sono:wght@300;500&family=Volkhov:ital@1&display=swap"
+        rel="stylesheet">
+    <link href="estilo.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript"> </script>
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        header {
+            position: relative;
+            margin: 20px auto;
+            width: 1200px;
+            height: 120px;
+            background: #ffd19b;
+
+        }
+
+        #logo {
+
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 160px;
+            height: 50px;    
+
+        }
+
+        .botones {
+            float: right;
+            position: relative;
+            top: 20px;
+            width: 70px;
+            margin-right: 15px;
+            margin-left: 15px;
+            height: 20px;
+            text-decoration: none;
+            font-weight: 200;
+            color: #cd4c08;
+            padding-top: 15px;
+            padding-bottom: 3px;
+            padding-left: 15px;
+            padding-right: 25px;
+            background-color: white;
+            border: 2px solid #de5c1c;
+            border-style: solid;
+            border-radius: 25px;
+            font-family: 'Righteous', cursive;
+            font-size: 15px;
+            text-align: center;
+            line-height: 10px;
+
+        }
+
+        a .botones:hover {
+            background-color: #e2e8f3;
+        }
+
+        nav {
+            position: relative;
+            margin: auto;
+            width: 1005px;
+            height: 45px;
+            background: #ffbb9c
+        }
+
+        .cajabuscar {
+            float: none;
+            width: 100%;
+            max-width: 440px;
+            margin-bottom: 30px;
+            margin-top: 33px;
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-block;
+            text-align: left;
+            border-radius: 20px;
+
+        }
+
+        #buscarform {
+            padding: 0;
+            float: left;
+            clear: both;
+            width: 100%;
+            position: relative;
+            ;
+
+        }
+
+        #buscarform fieldset {
+            float: left
+        }
+
+        #buscarform .search {
+            font-size: 20px;
+            top: 0px;
+            color: white;
+            background: #e96f6f;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 9px;
+            height: 24px;
+            width: 24px;
+            text-align: center;
+
+        }
+
+        #buscarform fieldset {
+            width: 100%
+        }
+
+        #s {
+            width: 100%;
+            background-color: #fff;
+            float: left;
+            padding: 8px 0;
+            text-indent: 10px;
+            color: #d1510f;
+            border: 1px solid white;
+            box-sizing: border-box;
+            height: 42px;
+            border-radius: 20px;
+        }
+
+        .button {
+            right: 0;
+            top: 0;
+            padding: 9px 0;
+            float: right;
+            border: 0;
+            width: 42px;
+            height: 42px;
+            cursor: pointer;
+            text-align: center;
+            padding-top: 10px;
+            color: #ff8243;
+            transition: all 0.25s linear;
+            background: transparent;
+            z-index: 10;
+            position: absolute; 
+            border: 0;
+            vertical-align: top; 
+            border-radius: 20px;
+
+        }
+
+        section {
+
+            position: relative;
+            margin: auto;
+            margin-top: 20px;
+            width: 1200px;
+            height: 700px;
+            background: white;
+
+        }
+
+        aside#der {
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            top: 20px;
+            width: 220px;
+            height: 660px;
+           
+        }
+
+        article {
+
+            position: absolute;
+            left: 243px;
+            top: 20px;
+            width: 710px;
+            height: 660px;
+            text-align:center;
+            background: white;
+        }
+
+
+        #info {
+
+position: absolute;
+top: 210px;
+left: 22px;
+width: 650px;
+height: 25px;
+background: #b2442a;
+
+font-family: 'Cinzel Decorative', cursive;
+                font-size: 20px;
+                text-align: center;
+                line-height: 22px;
+}
+
+#pregunt{
+
+    position: absolute;
+top: 250px;
+left: 22px;
+width: 650px;
+height: 25px;
+background: #b2442a;
+
+font-family: 'Cinzel Decorative', cursive;
+                font-size: 20px;
+                text-align: center;
+                line-height: 22px;
+}
+
+
+.lista{
+  background: white;
+  
+  max-width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  list-style: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pregunta{
+  padding: 9px;
+  border-bottom: 1px solid #b2442a;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.pregunta i{
+  font-size: 21px;
+  transition: .3s;
+}
+.pregunta span{
+  transition: .3s;
+}
+.pregunta:hover span{
+  margin-left: 15px;
+}
+.pregunta:last-child{
+  border: none;
+}
+.respuesta{
+  text-align: justify;
+  background: #f3f3f3;
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+  padding: 0 14px;
+}
+/* Estilos para una pregunta seleccionada */
+.resp_act{
+  padding-top: 2px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid lightgrey;
+}
+.ico_resp_act{
+  transform: rotate(180deg);
+}
+
+        #top {
+
+            position: relative;
+            margin: 5px auto;
+            width: 680px;
+            height: 120px;
+        }
+
+        #top ul {
+
+            width: 980px;
+            height: 192px;
+        }
+
+        #top ul li {
+
+            float: left;
+            width: 226px;
+            margin-right: 5px;
+            height: 192px;
+            background: #fa996c;
+            border-radius: 10px;
+
+        }
+
+        #top ul li img {
+position: relative;
+top: 10px;
+            border-radius:20%;
+height:100px;
+width: 120px;
+}
+
+#top ul li h1 {
+font-family: 'IM Fell DW Pica', serif;
+}
+
+#top ul li p {
+font-size:14px;
+margin:10px;
+
+}
+
+
+        aside#izq {
+
+            position: absolute;
+            right: 10px;
+            top: 20px;
+            width: 220px;
+            height: 660px;
+            background: white;
+            font-family: 'Righteous', cursive;
+            font-size: small;
+            color: #6d0006;
+            
+        }
+
+
+
+    #menu {
+    padding: 2px;
+    margin: 0;
+    border: 0; 
+    height: 20px;
+    
+    
+}
+ 
+#menu ul, li {
+    list-style: none;
+
+    margin: 0;
+    padding: 0; 
+}
+ 
+#menu ul {
+    position: relative;
+    z-index: 597;
+    float: left; 
+}
+ 
+#menu ul li {
+    float: left;
+    min-height: 1px;
+    line-height: 1em;
+    vertical-align: middle; 
+    width: 217px;
+    
+}
+ 
+#menu ul li.hover,
+#menu ul li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default; 
+}
+ 
+#menu ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 598;
+    width: 100%; 
+}
+ 
+#menu ul ul li {
+    float: none; 
+}
+ 
+#menu ul li:hover > ul {
+    visibility: visible; 
+}
+ 
+#menu ul ul {
+    top: 0;
+    left: 100%; 
+}
+ 
+#menu ul li {
+    float: none; 
+}
+ 
+#menu {
+    width: 100px; 
+}
+ 
+#menu span, #menu a {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none; 
+}
+ 
+#menu:after, #menu ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+}
+ 
+#menu ul, #menu li {
+    width: 100%; 
+}
+#menu li {
+    background: #cd4c08;
+}
+#menu li:hover {
+    background: #c11000; 
+}
+#menu a {
+    color: white;
+    line-height: 160%;
+    padding: 11px 28px 11px 28px;
+    width: 253px; 
+}
+#menu ul ul li {
+    background: #ffbb9c; 
+}
+#menu ul ul li:hover {
+    background: #c11000; 
+}
+#menu ul ul li:hover a {
+    color: #6d0006; 
+}
+#menu ul ul li ul li {
+    background: white; 
+}
+#menu ul ul li ul li:hover {
+    background: #c11000; 
+}
+#menu .has-sub {
+    position: relative; 
+}
+ 
+#menu .has-sub:after, #menu .has-sub > ul > .has-sub:hover:after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 9px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -5px;
+}
+ 
+#menu .fa-angle-right {
+    float: right;
+}
+
+
+#contenedor {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: -115px;
+    margin: 0;
+  
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#central {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 250%;
+    color:#fff4e1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #b2442a;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #6d0006;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #E4E4E4;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#c11000;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: white;
+    
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #fa996c;
+    color:#bbe1fa;
+}
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #c11000;
+}
+
+.inferior {
+    margin-top: 10px;
+    font-size: 90%;
+    text-align: center;
+}
+
+.inferior a {
+    display: block;
+    text-decoration: none;
+    color: #bbe1fa;
+    margin-bottom: 3px;
+}
+
+.inferior a:hover {
+    color: black;
+}
+
+        footer {
+            position: relative;
+            margin: 20px auto;
+            width: 1200px;
+            height: 100px;
+            background: #cd4c08;
+            text-align: center;
+            line-height: 70px;
+            color: white;
+        }
+
+        aside#izqbajo {
+                position: absolute;
+                right: 860px;
+                top: 10px;
+               
+            }
+
+      
+
+
+
+    </style>
+
+<body>
+
+    <header>
+
+        <div id="logo"><img src="logo_nam-removebg-preview.png"></div> 
+
+        
+
+        <ul>
+
+            <a href="">
+                <li class="botones">Acerca de</li>
+            </a>
+            <a href="">
+                <li class="botones">Servicios</li>
+            </a>
+            <a href="">
+                <li class="botones">Inicio</li>
+
+            </a>
+        </ul>
+
+    </header>
+
+    <nav>
+
+        <div id="cajabuscar">
+            <form method="get" id="buscarform">
+                <fieldset>
+                    <input type="text" id="s" value="" placeholder="Escribe tus palabras de busqueda" />
+                    <input class="button" type="submit" value="" />
+                    <i class="search"></i>
+                </fieldset>
+            </form>
+        </div>
+
+    </nav>
+
+
+    <section>
+
+        <aside id="izq">
+
+
+
+    <div style = "text-align: relative">  
+<br></br>
+ <p> Contamos con una amplia coleccion documental que incluye desde publicaciones academicas hasta literatura infantil y juvenil
+<br>
+<br>
+Horarios de atencion Lunes a Viernes 9:00 a 20:00 hrs 
+    <br>
+    Sabado y Domingo 10:00 a 18:00 hrs
+<br>
+<br>
+Contacto: 5574733916 goquegza.infol@gmai
+<br>
+<br>
+*La solicitud de tramites requiere de una identificacion*
+              
+<br></br>
+<hr>
+<br></br>
+
+    <div style = "text-align: center">
+ <p><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d120381.64076307825!2d-99.21669075088545!3d19.458745253358572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssecundaria%20tecnica%2037!5e0!3m2!1ses!2smx!4v1683852810073!5m2!1ses!2smx" width="100%" height="250" width="200" allowfullscreen="" loading="lazy"></p> 
+                    <li class="mapa"> ubicacion </li></iframe>
+
+
+
+                       
+</div>
+              
+
+
+        </aside>
+
+        <article>
+
+            <div id="top">
+
+                <ul> 
+                    <li>
+
+                        <img src="lib.png" width="100"></a>
+                        <p> Consulta en el catálogo  los libros digitales en texto completo que tenemos a tu disposición. </p>
+                        <h1> Libros</h1>
+                    </li>
+                    <li>
+                        <img src="rev.png" width="100"> </a>
+                        <p> Consulta en el catálogo los títulos y fascículos de las revistas digitales que tenemos a tu disposición. </p>
+                        <h1> Revistas</h1>
+                    </li>
+                    <li>
+                        <img src="tes.png" width="100"></a>
+                        <p> Consulta en el catálogo tesisunam las tesis digitales en texto completo que tenemos a tu disposición.</p>
+                        <h1> Tesis</h1> 
+                        
+                    </li>
+                </ul>
+            </div>
+
+                <div id="info">
+
+                <a href="https://www.coar.es/ultimos-libros-adquiridos/"> Ultimos libros adquiridos</a> 
+                
+<br></br>
+
+            </div>
+            
+            <div id="pregunt">
+
+                <a = ""> Preguntas más frecuentes</a>       
+            </div>
+
+            <div id="frecuencia">
+
+
+            <ul class="lista">
+                <!-- Pregunta 1 -->
+                <li class="pregunta" data-resp_id="resp_1">
+                  <span></span>
+                  <i class="ico_resp fas fa-angle-down"></i>
+                </li>
+                <li class="respuesta" id="resp_1">
+                  <span id="sp_resp_1"></span>
+                </li>
+              
+                <!-- Pregunta 2 -->
+                <li class="pregunta" data-resp_id="resp_2">
+                  <span></span>
+                  <i class="ico_resp fas fa-angle-down"></i>
+                </li>
+                <li class="respuesta" id="resp_2">
+                  <span id="sp_resp_2"></span>
+                </li>
+                <ul class="lista">
+
+                    <!-- Pregunta 3 -->
+                    <li class="pregunta" data-resp_id="resp_3">
+                      <span></span>
+                      <i class="ico_resp fas fa-angle-down"></i>
+                    </li>
+                    <li class="respuesta" id="resp_3">
+                      <span id="sp_resp_3"></span>
+                    </li>
+                  
+                    <!-- Pregunta 4 -->
+                    <li class="pregunta" data-resp_id="resp_4">
+                      <span></span>
+                      <i class="ico_resp fas fa-angle-down"></i>
+                    </li>
+                    <li class="respuesta" id="resp_4">
+                      <span id="sp_resp_4"></span>
+                    </li>
+                  
+                    <ul class="lista">
+                        <!-- Pregunta 5 -->
+                        <li class="pregunta" data-resp_id="resp_5">
+                          <span></span>
+                          <i class="ico_resp fas fa-angle-down"></i>
+                        </li>
+                        <li class="respuesta" id="resp_1">
+                          <span id="sp_resp_5"></span>
+                        </li>
+                      
+                        <!-- Pregunta 6 -->
+                        <li class="pregunta" data-resp_id="resp_2">
+                          <span></span>
+                          <i class="ico_resp fas fa-angle-down"></i>
+                        </li>
+                        <li class="respuesta" id="resp_6">
+                          <span id="sp_resp_6"></span>
+                        </li>
+                        <ul class="lista">
+                            <!-- Pregunta 7 -->
+                            <li class="pregunta" data-resp_id="resp_7">
+                              <span></span>
+                              <i class="ico_resp fas fa-angle-down"></i>
+                            </li>
+                            <li class="respuesta" id="resp_7">
+                              <span id="sp_resp_7"></span>
+                            </li>                                        
+              </ul>
+
+              <li class="pregunta" data-resp_id="resp_1">
+                <span>¿Quién puede usar la biblioteca?</span>
+                <i class="ico_resp fas fa-angle-down"></i>
+              </li>
+              <li class="respuesta" id="resp_1">
+                <span id="sp_resp_1"><a href= "https://www.cervantes.es/bibliotecas_documentacion_espanol/preguntas_frecuentes.htm"></a> </span>
+              </li>
+              
+              <li class="pregunta" data-resp_id="resp_2">
+                <span>¿Puedo solicitar libros de otras bibliotecas?</span>
+                <i class="ico_resp fas fa-angle-down"></i>
+              </li>
+              <li class="respuesta" id="resp_2">
+                <span id="sp_resp_1"><a href= "https://www.cervantes.es/bibliotecas_documentacion_espanol/preguntas_frecuentes.htm"></a> </span>
+              </li>
+              <li class="pregunta" data-resp_id="resp_3">
+                <span>¿Cómo puedo consultar el fondo de la biblioteca?</span>
+                <i class="ico_resp fas fa-angle-down"></i>
+              </li>
+              <li class="respuesta" id="resp_3">
+                <span id="sp_resp_1"><a href= "https://www.cervantes.es/bibliotecas_documentacion_espanol/preguntas_frecuentes.htm"></a> </span>
+              </li>
+              <li class="pregunta" data-resp_id="resp_4">
+                <span>¿Cuántos documentos se pueden llevar en préstamo y por cuánto tiempo?</span>
+                <i class="ico_resp fas fa-angle-down"></i>
+              </li>
+              <li class="respuesta" id="resp_4">
+                <span id="sp_resp_1"><a href= "https://www.cervantes.es/bibliotecas_documentacion_espanol/preguntas_frecuentes.htm"></a> </span>
+              </li>
+              <li class="pregunta" data-resp_id="resp_5">
+                <span>Además de libros en español, ¿pueden encontrarse libros en otras lenguas de España? ¿y en inglés?</span>
+                <i class="ico_resp fas fa-angle-down"></i>
+              </li>
+              <li class="respuesta" id="resp_5">
+                <span id="sp_resp_1"><a href= "https://www.cervantes.es/bibliotecas_documentacion_espanol/preguntas_frecuentes.htm"></a> </span>
+              </li>
+              <li class="pregunta" data-resp_id="resp_6">
+                <span>¿Cómo puedo hacer llegar mis quejas, sugerencias o desideratas a la biblioteca?</span>
+                <i class="ico_resp fas fa-angle-down"></i>
+              </li>
+              <li class="respuesta" id="resp_6">
+                <span id="sp_resp_1"><a href= "https://www.cervantes.es/bibliotecas_documentacion_espanol/preguntas_frecuentes.htm"></a> </span>
+              </li>
+              <li class="pregunta" data-resp_id="resp_7">
+                <span>¿Has olvidado tu contraseña? </span>
+                <i class="ico_resp fas fa-angle-down"></i>
+              </li>
+              <li class="respuesta" id="resp_7">
+                <span id="sp_resp_1"><a href= "https://www.cervantes.es/bibliotecas_documentacion_espanol/preguntas_frecuentes.htm"></a> </span>
+              </li>
+</div>
+
+
+        </article>
+
+        <aside id="der">
+
+            <div id="menu">
+                <ul>
+                    <li class="has-sub"><a title="" href="">Notas</a>
+
+                        <ul>
+                            <li class="has-sub"><a title="" href="#">Secciones</a>
+                                <ul>
+                                    <li><a title="" href="">lectura y consulta</a></li>
+                                    <li><a title="" href="">hemeroteca</a></li>
+                                    <li><a title="" href="">colección local</a></li>    
+                                    <li><a title="" href="">zona de informatica</a></li>
+                                    <li><a title="" href="">fotocopias</a></li>
+                                </ul>
+                             </li>
+                             <li><a title="" href="#">Etiquetas</a>
+                            <ul>
+                                <li><a title="" href="">Narrativa</a></li>
+                                <li><a title="" href="">Ensayo</a></li>
+                                <li><a title="" href="">Audiolibro</a></li>
+                                <li><a title="" href="">Poesía</a></li>
+                            </ul>          
+                            </li>
+                         </ul>
+                    </li>
+
+                    <li class="has-sub"><a title="" href="https://bienvenidosalafiesta.com/?page_id=15022">Autores</a> </li>
+                        
+                    <li class="has-sub"><a title="" href="https://bienvenidosalafiesta.com/?page_id=1791">Cuentos</a>
+                        <ul>
+                            <li><a title="" href="">Infantiles</a></li>
+                            <li><a title="" href="">Juveniles</a></li>
+                        </ul> 
+                    </li>
+
+                    <li class="has-sub"><a title="" href="">P. academicas</a>
+
+                        <ul>
+                            <li class="has-sub"><a title="" href="#">Ciencias</a>
+                                <ul>
+                                 <li><a title="" href="">matemáticas</a></li>
+                                    <li><a title="" href="">fisíca</a></li>
+                                    <li><a title="" href="">química</a></li>      
+                                    <li><a title="" href="">biología</a></li>
+                                    <li><a title="" href="">salud</a></li>   
+                                       
+                                </ul>
+                             </li>
+                             <li><a title="" href="#">Humanidades</a> 
+                             <ul>
+                                <li><a title="" href="">sociales</a></li>
+                                   <li><a title="" href="">política</a></li>
+                                   <li><a title="" href="">comunicación</a></li>               
+                               </ul>
+                            </li>
+
+                            <li><a title="" href="">Artes</a>
+                            <ul>
+                                <li><a title="" href="">pintura</a></li>
+                                   <li><a title="" href="">escultura</a></li>
+                                   <li><a title="" href="">música</a></li>                                         
+                               </ul>
+                            </li>
+
+                            <li><a title="" href="">Base de datos</a></li>
+                            <li><a title="" href="">Libros electrónicos</a></li>
+                         </ul>
+                         <li class="has-sub"><a title="" href="">Actividades</a>
+                            <li class="has-sub"><a title="" href="">Horarios</a>
+
+
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="contenedor">
+                <div id="central">
+                    <div id="login">
+                        <div class="titulo">
+                            Bienvenido
+                        </div>
+                        <form id="loginform">
+                            <input type="text" name="usuario" placeholder="Usuario" required>
+                            
+                            <input type="password" placeholder="Contraseña" name="password" required>
+                            
+                            <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                        </form>
+                        <div class="pie-form">
+                            <a href="#">¿Perdiste tu contraseña?</a>
+                            <a href="#">¿No tienes Cuenta? Registrate</a>
+                        </div>
+                  
+                </div>
+            </div>
+
+        </aside>
+
+
+    </section>
+
+
+    <footer>
+
+ &copy; Goquegza 2023 
+       Todos los derechos reservados a este par de intento de alumnos
+        
+      
+                </div>
+                </div>
+            </ul>
+
+        </aside>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
